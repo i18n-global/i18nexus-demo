@@ -2,7 +2,7 @@
 
 import { useTranslation } from "i18nexus";
 import Link from "next/link";
-import { DownloadStats } from "@/app/_entities/download";
+import { DownloadStats } from "@entities/download";
 
 export default function HomePage() {
   const { t } = useTranslation();

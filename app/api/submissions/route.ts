@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { revalidatePath } from "next/cache";
-import { db } from "@/lib/firebase";
+import { db } from "@shared/lib/firebase";
 import {
   collection,
   addDoc,

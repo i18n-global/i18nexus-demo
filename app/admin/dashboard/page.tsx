@@ -1,4 +1,4 @@
-import { AdminDashboard } from "@/app/_widgets/admin-dashboard";
+import { AdminDashboard } from "@widgets/admin-dashboard";
 
 export default function AdminDashboardPage() {
   return <AdminDashboard />;
