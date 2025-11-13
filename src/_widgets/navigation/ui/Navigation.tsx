@@ -201,8 +201,7 @@ export default function Navigation() {
           <div className="flex items-center justify-between p-4 border-b border-slate-800">
             <Link
               href="/"
-              className="flex items-center space-x-2"
-              onClick={() => setSidebarOpen(false)}>
+              className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-xs">i18</span>
               </div>
@@ -236,7 +235,6 @@ export default function Navigation() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  onClick={() => setSidebarOpen(false)}
                   className={`flex items-center space-x-3 px-4 py-3 rounded-lg text-sm font-medium transition-all ${
                     pathname === item.href
                       ? "bg-blue-600 text-white shadow-lg"
@@ -259,7 +257,6 @@ export default function Navigation() {
                   <div className="flex items-stretch">
                     <Link
                       href="/cli"
-                      onClick={() => setSidebarOpen(false)}
                       className={`flex-1 flex items-center space-x-3 px-4 py-3 rounded-l-lg text-sm font-medium transition-all ${
                         isCliSelected
                           ? "bg-indigo-600 text-white shadow-lg"
@@ -303,7 +300,6 @@ export default function Navigation() {
                       <Link
                         key={item.href}
                         href={item.href}
-                        onClick={() => setSidebarOpen(false)}
                         className="group flex items-center space-x-3 px-4 py-2 rounded-lg text-sm font-medium transition-all text-slate-400 hover:text-white hover:bg-slate-800">
                         {item.icon}
                         <span
@@ -324,7 +320,6 @@ export default function Navigation() {
                   <div className="flex items-stretch">
                     <Link
                       href="/docs/i18nexus"
-                      onClick={() => setSidebarOpen(false)}
                       className={`flex-1 flex items-center space-x-3 px-4 py-3 rounded-l-lg text-sm font-medium transition-all ${
                         isDocsSelected
                           ? "bg-blue-600 text-white shadow-lg"
@@ -368,7 +363,6 @@ export default function Navigation() {
                       <Link
                         key={item.href}
                         href={item.href}
-                        onClick={() => setSidebarOpen(false)}
                         className="group flex items-center space-x-3 px-4 py-2 rounded-lg text-sm font-medium transition-all text-slate-400 hover:text-white hover:bg-slate-800">
                         {item.icon}
                         <span
@@ -394,7 +388,6 @@ export default function Navigation() {
               <div className="space-y-1">
                 <Link
                   href="/admin/login"
-                  onClick={() => setSidebarOpen(false)}
                   className={`flex items-center space-x-3 px-4 py-3 rounded-lg text-sm font-medium transition-all ${
                     pathname === "/admin/login"
                       ? "bg-blue-600 text-white shadow-lg"
@@ -407,7 +400,6 @@ export default function Navigation() {
                 </Link>
                 <Link
                   href="/admin/dashboard"
-                  onClick={() => setSidebarOpen(false)}
                   className={`flex items-center space-x-3 px-4 py-3 rounded-lg text-sm font-medium transition-all ${
                     pathname === "/admin/dashboard"
                       ? "bg-blue-600 text-white shadow-lg"
